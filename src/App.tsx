@@ -1,96 +1,211 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import "./index.css";
 import logo from "./assets/logo.png";
 import logoMini from "./assets/logo-mini.png";
+import { AzureOpenAI } from "openai";
 import { Input } from "./components/Input";
+import commits from './data/commits.json';
+import issues from './data/issues.json';
+import meetings from './data/meetings.json';
+
+const SYSTEM_PROMPT = `
+You are a time management assistant. You have access to the user's commit history, issues, and meeting data. For each day:
+- Match commits to issues and determine which issue was worked on each day.
+- Ask the user for the total hours spent per day/issue and help them fill out a timesheet.
+- If the user requests, summarize what was accomplished in the sprint.
+- For meetings (except daily), round up the meeting duration to the nearest hour and add it to the timesheet as effort.
+- Guide the user with questions to fill in missing information and generate reports as needed.
+
+Here is the user's data:
+COMMITS: ${JSON.stringify(commits)}
+ISSUES: ${JSON.stringify(issues)}
+MEETINGS: ${JSON.stringify(meetings)}
+`;
 
 function App() {
-  // Mesajlar: { sender: 'user' | 'ai', text: string }
-  const [messages, setMessages] = useState([
-    { sender: "ai", text: "Merhaba! Size nasıl yardımcı olabilirim?" },
-  ]);
-  const [input, setInput] = useState("");
-  const [loading, setLoading] = useState(false);
-  const chatEndRef = useRef<HTMLDivElement | null>(null);
+  const [messages, setMessages] = useState<{ role: string, content: string }[]>([]);
+  const [userInput, setUserInput] = useState<string>("");
 
-  useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  const func = async (userMessage: string) => {
+    const endpoint = "https://hdem-mc68m1xm-eastus2.cognitiveservices.azure.com/";
+    const modelName = "gpt-4.1";
+    const deployment = "gpt-4.1-2025";
+    const apiKey = "AcqPCyQMc6imX8aMEhtYimKpFEgaIcg7zW6DFYqpjjd6fBd9jJkQJQQJ99BFACHYHv6XJ3w3AAAAACOGHEXq";
+    const apiVersion = "2024-04-01-preview";
+    const options = { endpoint, apiKey, deployment, apiVersion, dangerouslyAllowBrowser: true }
 
-  const handleSend = async () => {
-    if (!input.trim()) return;
-    const userMsg = { sender: "user", text: input };
-    setMessages((msgs) => [...msgs, userMsg]);
-    setInput("");
-    setLoading(true);
-    // Dummy AI cevabı (gerçek API ile değiştirilebilir)
-    setTimeout(() => {
-      setMessages((msgs) => [
-        ...msgs,
-        {
-          sender: "ai",
-          text: "AI: Şu anda demo modundayım. Gerçek cevap için API entegrasyonu ekleyebilirsiniz.",
-        },
-      ]);
-      setLoading(false);
-    }, 1000);
+    const client = new AzureOpenAI(options);
+
+    const responseStream = await client.chat.completions.create({
+      messages: [
+        { role: "system", content: SYSTEM_PROMPT },
+        { role: "user", content: userMessage }
+      ],
+      stream: true,
+      max_completion_tokens: 800,
+      temperature: 1,
+      top_p: 1,
+      frequency_penalty: 0,
+      presence_penalty: 0,
+      model: modelName
+    });
+
+    let accumulatedContent = "";
+
+    for await (const chunk of responseStream) {
+      const content = chunk.choices[0]?.delta?.content || "";
+      accumulatedContent += content;
+    }
+
+    setMessages(prevMessages => [...prevMessages, { role: "assistant", content: accumulatedContent }]);
+  }
+
+  const handleButtonClick = (buttonText: string) => {
+    setMessages(prevMessages => [...prevMessages, { role: "user", content: buttonText }]);
+    func(buttonText);
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") handleSend();
+  const handleSend = () => {
+    if (userInput.trim()) {
+      setMessages(prevMessages => [...prevMessages, { role: "user", content: userInput }]);
+      func(userInput);
+      setUserInput("");
+    }
   };
 
   return (
-    <div className="min-h-screen ">
-      <header className="w-full bg-[black] min-h-[70px] flex items-center shadow-md mb-8">
-        <div className="max-w-[900px] w-full mx-auto flex items-center h-[70px]">
-          <img src={logo} alt="Time Flick Logo" className="h-10 ml-2" />
+    <div style={{
+      backgroundColor: '#0c1a2e',
+      backgroundImage: `url('/src/assets/bg.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      color: 'white',
+      minHeight: '100vh',
+      width: '100vw',
+      overflow: 'hidden',
+      position: 'relative'
+    }}>
+      {/* Fixed Header */}
+      <header style={{
+        width: '100%',
+        minHeight: '67px',
+        maxHeight: '67px',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 10,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        padding: '8px 24px',
+        backgroundColor: "black"
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <img src={logo} alt="Time Flick Logo" style={{ height: '2.5rem' }} />
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div style={{
+            height: '40px',
+            width: '40px',
+            borderRadius: '50%',
+            backgroundColor: '#ef4444',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'white',
+            fontWeight: 'bold'
+          }}>
+            U
+          </div>
         </div>
       </header>
-      <div className="flex flex-col items-center justify-center min-h-[calc(100vh-70px)]">
-        <div className="w-full max-w-[900px] min-h-[600px] rounded-2xl shadow-lg p-10 flex flex-col gap-6">
-          <div className="flex flex-col items-center gap-3">
-            <img src={logoMini} width={58} />
-            <div className="text-[white] text-[20px] font-regular">Ne yapmak istersiniz?</div>
-            <div className="text-[white] text-[20px] font-regular">Ne yapmak istersiniz?</div>
-          </div>
-          <div className="flex-1 min-h-[400px] max-h-[500px] overflow-y-auto p-6 mb-3">
-            {messages.map((msg, idx) => (
-              <div
-                key={idx}
-                className={`flex ${
-                  msg.sender === "user" ? "justify-end" : "justify-start"
-                } my-3`}
-              >
-                <div
-                  className={`${
-                    msg.sender === "user"
-                      ? "bg-indigo-500 text-white rounded-[18px_18px_6px_18px] shadow-indigo-200"
-                      : "bg-[#e3e7ef] text-[#222] rounded-[18px_18px_18px_6px] shadow-[#e3e7ef44]"
-                  } px-6 py-3 max-w-[60%] text-[17px] break-words`}
-                >
-                  {msg.text}
-                </div>
+
+      {/* Main Content: Scrollable Chat Area */}
+      <div style={{
+        position: 'absolute',
+        top: 67 + 50, // header height + top margin
+        left: 0,
+        right: 0,
+        bottom: 80 + 50, // input height + bottom margin
+        overflowY: 'auto',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        background: 'transparent',
+      }}>
+        <div style={{
+          width: '55vw',
+          margin: '0 auto',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+        }}>
+          {messages.length === 0 ? (
+            // Initial view with logo and buttons
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: '1 1 0%', gap: '0.75rem', padding: '1.5rem' }}>
+              <img src={logoMini} alt="Time Flick Logo" style={{ height: '3rem' }} />
+              <div style={{ fontSize: '28px', fontWeight: 500, color: 'white' }}>Ne planlamak istersin?</div>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1rem' }}>
+                <button onClick={() => handleButtonClick("Bu haftayı oluştur")} style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.5)', color: 'white', padding: '0.5rem 1rem', borderRadius: '0.5rem', cursor: 'pointer' }}>Bu haftayı oluştur</button>
+                <button onClick={() => handleButtonClick("Geçen haftayı kopyala")} style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.5)', color: 'white', padding: '0.5rem 1rem', borderRadius: '0.5rem', cursor: 'pointer' }}>Geçen haftayı kopyala</button>
+                <button onClick={() => handleButtonClick("Taskları göster")} style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.5)', color: 'white', padding: '0.5rem 1rem', borderRadius: '0.5rem', cursor: 'pointer' }}>Taskları göster</button>
+                <button onClick={() => handleButtonClick("Toplantılardan efor oluştur")} style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.5)', color: 'white', padding: '0.5rem 1rem', borderRadius: '0.5rem', cursor: 'pointer' }}>Toplantılardan efor oluştur</button>
+                <button onClick={() => handleButtonClick("Eksik girişleri göster")} style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.5)', color: 'white', padding: '0.5rem 1rem', borderRadius: '0.5rem', cursor: 'pointer' }}>Eksik girişleri göster</button>
               </div>
-            ))}
-            {loading && (
-              <div className="flex justify-start my-3">
-                <div className="bg-[#e3e7ef] text-[#222] rounded-[18px_18px_18px_6px] px-6 py-3 text-[17px] max-w-[60%]">
-                  <span className="opacity-60">Yazıyor...</span>
-                </div>
-              </div>
-            )}
-            <div ref={chatEndRef} />
-          </div>
-          <Input 
-            input={input}
-            setInput={setInput}
-            onSend={handleSend}
-            loading={loading}
-            onKeyDown={handleKeyDown}
-          />
+            </div>
+          ) : (
+            // Chat view
+            <div style={{ flex: '1 1 0%', padding: '1rem', display: 'flex', flexDirection: 'column' }}>
+              {messages.map((message, index) => {
+                const messageContainerStyle: React.CSSProperties = {
+                  display: 'flex',
+                  justifyContent: message.role === 'user' ? 'flex-end' : 'flex-start',
+                  width: '100%',
+                  marginBottom: '1rem'
+                };
+
+                const messageStyle: React.CSSProperties = {
+                  padding: '0.75rem 1rem',
+                  borderRadius: '0.5rem',
+                  maxWidth: '75%',
+                  backgroundColor: message.role === "user" ? '#3b82f6' : '#374151',
+                  color: 'white',
+                };
+
+                return (
+                  <div key={index} style={messageContainerStyle}>
+                    <div style={messageStyle}>
+                      <p style={{ whiteSpace: 'pre-wrap', margin: 0 }}>{message.content}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
+      </div>
+
+      {/* Fixed   Input Area */}
+      <div style={{
+        position: 'fixed',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        bottom: 0,
+        zIndex: 10,
+        padding: '1rem',
+        width: '55vw',
+        boxSizing: 'border-box',
+      }}>
+        <Input
+          input={userInput}
+          setInput={setUserInput}
+          onSend={handleSend}
+          loading={false}
+          onKeyDown={(e) => e.key === "Enter" && handleSend()}
+        />
       </div>
     </div>
   );

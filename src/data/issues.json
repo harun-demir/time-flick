@@ -1,0 +1,1158 @@
+[
+  {
+    "sprint": "Sprint 1",
+    "startDate": "2025-06-24",
+    "endDate": "2025-06-30",
+    "TotalTarget": "154",
+    "RealTarget": "110",
+    "issues": [
+      {
+        "id": "1",
+        "key": "SCRUM-1",
+        "assignee": "veli",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Handle JSON parsing errors gracefully in ChatBox",
+          "status": {
+            "name": "To Do"
+          },
+          "created": "2025-06-25T17:44:00",
+          "updated": "2025-06-25T17:44:00"
+        }
+      },
+      {
+        "id": "2",
+        "key": "SCRUM-2",
+        "assignee": "ay\u015fe",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Add support for real-time feedback in Header",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-26T16:46:00",
+          "updated": "2025-06-26T16:46:00"
+        }
+      },
+      {
+        "id": "3",
+        "key": "SCRUM-3",
+        "assignee": "ali",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Design responsive message input for power users",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-30T18:44:00",
+          "updated": "2025-06-30T18:44:00"
+        }
+      },
+      {
+        "id": "4",
+        "key": "SCRUM-4",
+        "assignee": "veli",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Integrate chat list with backend API for edge cases",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-27T14:49:00",
+          "updated": "2025-06-27T14:49:00"
+        }
+      },
+      {
+        "id": "5",
+        "key": "SCRUM-5",
+        "assignee": "ali",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Design responsive message input for power users",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-06-27T09:13:00",
+          "updated": "2025-06-27T09:13:00"
+        }
+      },
+      {
+        "id": "6",
+        "key": "SCRUM-6",
+        "assignee": "veli",
+        "storyPoint": "13",
+        "fields": {
+          "summary": "Implement unit tests for ChatBox",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-27T09:05:00",
+          "updated": "2025-06-27T09:05:00"
+        }
+      },
+      {
+        "id": "7",
+        "key": "SCRUM-7",
+        "assignee": "ay\u015fe",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Refactor MessageRenderer for better readability",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-25T20:43:00",
+          "updated": "2025-06-25T20:43:00"
+        }
+      },
+      {
+        "id": "8",
+        "key": "SCRUM-8",
+        "assignee": "veli",
+        "storyPoint": "8",
+        "fields": {
+          "summary": "Add support for tab navigation in MessageRenderer",
+          "status": {
+            "name": "To Do"
+          },
+          "created": "2025-06-24T18:50:00",
+          "updated": "2025-06-24T18:50:00"
+        }
+      },
+      {
+        "id": "9",
+        "key": "SCRUM-9",
+        "assignee": "ali",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Fix overflow issue affecting MessageRenderer",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-26T18:21:00",
+          "updated": "2025-06-26T18:21:00"
+        }
+      },
+      {
+        "id": "10",
+        "key": "SCRUM-10",
+        "assignee": "veli",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Integrate role selector with backend API for power users",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-24T15:46:00",
+          "updated": "2025-06-24T15:46:00"
+        }
+      },
+      {
+        "id": "11",
+        "key": "SCRUM-11",
+        "assignee": "merve",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Improve accessibility in role selector (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-26T15:29:00",
+          "updated": "2025-06-26T15:29:00"
+        }
+      },
+      {
+        "id": "12",
+        "key": "SCRUM-12",
+        "assignee": "ay\u015fe",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Refactor SettingsPanel for better readability",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-25T03:57:00",
+          "updated": "2025-06-25T03:57:00"
+        }
+      },
+      {
+        "id": "13",
+        "key": "SCRUM-13",
+        "assignee": "veli",
+        "storyPoint": "8",
+        "fields": {
+          "summary": "Implement message input component with debounce behavior",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-27T09:29:00",
+          "updated": "2025-06-27T09:29:00"
+        }
+      },
+      {
+        "id": "14",
+        "key": "SCRUM-14",
+        "assignee": "ali",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Fix overflow issue affecting ChatBox",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-06-30T22:26:00",
+          "updated": "2025-06-30T22:26:00"
+        }
+      },
+      {
+        "id": "15",
+        "key": "SCRUM-15",
+        "assignee": "merve",
+        "storyPoint": "1",
+        "fields": {
+          "summary": "Handle timeout errors gracefully in SettingsPanel",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-28T03:09:00",
+          "updated": "2025-06-28T03:09:00"
+        }
+      },
+      {
+        "id": "16",
+        "key": "SCRUM-16",
+        "assignee": "veli",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Optimize Sidebar performance during multiple sessions",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-29T03:48:00",
+          "updated": "2025-06-29T03:48:00"
+        }
+      },
+      {
+        "id": "17",
+        "key": "SCRUM-17",
+        "assignee": "merve",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Handle authentication errors gracefully in MessageRenderer",
+          "status": {
+            "name": "To Do"
+          },
+          "created": "2025-06-30T23:22:00",
+          "updated": "2025-06-30T23:22:00"
+        }
+      },
+      {
+        "id": "18",
+        "key": "SCRUM-18",
+        "assignee": "ali",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Handle network errors gracefully in Sidebar",
+          "status": {
+            "name": "To Do"
+          },
+          "created": "2025-06-30T05:45:00",
+          "updated": "2025-06-30T05:45:00"
+        }
+      },
+      {
+        "id": "19",
+        "key": "SCRUM-19",
+        "assignee": "ali",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Handle timeout errors gracefully in SettingsPanel",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-29T18:44:00",
+          "updated": "2025-06-29T18:44:00"
+        }
+      },
+      {
+        "id": "20",
+        "key": "SCRUM-20",
+        "assignee": "ali",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Optimize MessageRenderer performance during multiple sessions",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-06-25T14:06:00",
+          "updated": "2025-06-25T14:06:00"
+        }
+      }
+    ]
+  },
+  {
+    "sprint": "Sprint 2",
+    "startDate": "2025-07-01",
+    "endDate": "2025-07-07",
+    "TotalTarget": "156",
+    "RealTarget": "114",
+    "issues": [
+      {
+        "id": "21",
+        "key": "SCRUM-21",
+        "assignee": "merve",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Implement unit tests for MessageRenderer",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-06T15:52:00",
+          "updated": "2025-07-06T15:52:00"
+        }
+      },
+      {
+        "id": "22",
+        "key": "SCRUM-22",
+        "assignee": "merve",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Improve accessibility in theme switcher (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-06T18:37:00",
+          "updated": "2025-07-06T18:37:00"
+        }
+      },
+      {
+        "id": "23",
+        "key": "SCRUM-23",
+        "assignee": "ali",
+        "storyPoint": "13",
+        "fields": {
+          "summary": "Fix flicker bug affecting SettingsPanel",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-04T15:01:00",
+          "updated": "2025-07-04T15:01:00"
+        }
+      },
+      {
+        "id": "24",
+        "key": "SCRUM-24",
+        "assignee": "merve",
+        "storyPoint": "13",
+        "fields": {
+          "summary": "Fix overflow issue affecting Sidebar",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-03T02:43:00",
+          "updated": "2025-07-03T02:43:00"
+        }
+      },
+      {
+        "id": "25",
+        "key": "SCRUM-25",
+        "assignee": "veli",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Optimize MessageRenderer performance during multiple sessions",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-06T03:43:00",
+          "updated": "2025-07-06T03:43:00"
+        }
+      },
+      {
+        "id": "26",
+        "key": "SCRUM-26",
+        "assignee": "merve",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Implement unit tests for MessageRenderer",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-06T03:25:00",
+          "updated": "2025-07-06T03:25:00"
+        }
+      },
+      {
+        "id": "27",
+        "key": "SCRUM-27",
+        "assignee": "ali",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Optimize SettingsPanel performance during power users",
+          "status": {
+            "name": "Testing"
+          },
+          "created": "2025-07-05T04:47:00",
+          "updated": "2025-07-05T04:47:00"
+        }
+      },
+      {
+        "id": "28",
+        "key": "SCRUM-28",
+        "assignee": "ali",
+        "storyPoint": "1",
+        "fields": {
+          "summary": "Integrate chat list with backend API for mobile users",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-06T06:02:00",
+          "updated": "2025-07-06T06:02:00"
+        }
+      },
+      {
+        "id": "29",
+        "key": "SCRUM-29",
+        "assignee": "ay\u015fe",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Refactor MessageRenderer for better responsiveness",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-05T16:31:00",
+          "updated": "2025-07-05T16:31:00"
+        }
+      },
+      {
+        "id": "30",
+        "key": "SCRUM-30",
+        "assignee": "veli",
+        "storyPoint": "13",
+        "fields": {
+          "summary": "Implement chat bubble component with mobile view",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-02T03:44:00",
+          "updated": "2025-07-02T03:44:00"
+        }
+      },
+      {
+        "id": "31",
+        "key": "SCRUM-31",
+        "assignee": "ali",
+        "storyPoint": "8",
+        "fields": {
+          "summary": "Improve accessibility in theme switcher (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-03T20:31:00",
+          "updated": "2025-07-03T20:31:00"
+        }
+      },
+      {
+        "id": "32",
+        "key": "SCRUM-32",
+        "assignee": "ali",
+        "storyPoint": "8",
+        "fields": {
+          "summary": "Refactor Header for better responsiveness",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-07-01T16:00:00",
+          "updated": "2025-07-01T16:00:00"
+        }
+      },
+      {
+        "id": "33",
+        "key": "SCRUM-33",
+        "assignee": "ay\u015fe",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Design responsive loading spinner for edge cases",
+          "status": {
+            "name": "To Do"
+          },
+          "created": "2025-07-08T04:57:00",
+          "updated": "2025-07-08T04:57:00"
+        }
+      },
+      {
+        "id": "34",
+        "key": "SCRUM-34",
+        "assignee": "ay\u015fe",
+        "storyPoint": "1",
+        "fields": {
+          "summary": "Improve accessibility in message input (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-06T03:42:00",
+          "updated": "2025-07-06T03:42:00"
+        }
+      },
+      {
+        "id": "35",
+        "key": "SCRUM-35",
+        "assignee": "ay\u015fe",
+        "storyPoint": "8",
+        "fields": {
+          "summary": "Improve accessibility in chat list (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-07T11:57:00",
+          "updated": "2025-07-07T11:57:00"
+        }
+      },
+      {
+        "id": "36",
+        "key": "SCRUM-36",
+        "assignee": "merve",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Handle timeout errors gracefully in ChatBox",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-06T15:53:00",
+          "updated": "2025-07-06T15:53:00"
+        }
+      },
+      {
+        "id": "37",
+        "key": "SCRUM-37",
+        "assignee": "veli",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Add support for mobile view in SettingsPanel",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-04T07:32:00",
+          "updated": "2025-07-04T07:32:00"
+        }
+      },
+      {
+        "id": "38",
+        "key": "SCRUM-38",
+        "assignee": "merve",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Fix flicker bug affecting ChatBox",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-07-07T16:36:00",
+          "updated": "2025-07-07T16:36:00"
+        }
+      },
+      {
+        "id": "39",
+        "key": "SCRUM-39",
+        "assignee": "veli",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Add support for real-time feedback in Sidebar",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-07-07T23:48:00",
+          "updated": "2025-07-07T23:48:00"
+        }
+      },
+      {
+        "id": "40",
+        "key": "SCRUM-40",
+        "assignee": "ay\u015fe",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Design responsive user avatar for mobile users",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-03T23:57:00",
+          "updated": "2025-07-03T23:57:00"
+        }
+      }
+    ]
+  },
+  {
+    "sprint": "Sprint 3",
+    "startDate": "2025-07-08",
+    "endDate": "2025-07-14",
+    "TotalTarget": "110",
+    "RealTarget": "95",
+    "issues": [
+      {
+        "id": "41",
+        "key": "SCRUM-41",
+        "assignee": "ay\u015fe",
+        "storyPoint": "13",
+        "fields": {
+          "summary": "Implement unit tests for Header",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-15T01:59:00",
+          "updated": "2025-07-15T01:59:00"
+        }
+      },
+      {
+        "id": "42",
+        "key": "SCRUM-42",
+        "assignee": "ay\u015fe",
+        "storyPoint": "1",
+        "fields": {
+          "summary": "Integrate theme switcher with backend API for mobile users",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-07-14T10:51:00",
+          "updated": "2025-07-14T10:51:00"
+        }
+      },
+      {
+        "id": "43",
+        "key": "SCRUM-43",
+        "assignee": "ali",
+        "storyPoint": "8",
+        "fields": {
+          "summary": "Improve accessibility in chat list (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-11T14:38:00",
+          "updated": "2025-07-11T14:38:00"
+        }
+      },
+      {
+        "id": "44",
+        "key": "SCRUM-44",
+        "assignee": "ali",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Design responsive loading spinner for power users",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-13T23:16:00",
+          "updated": "2025-07-13T23:16:00"
+        }
+      },
+      {
+        "id": "45",
+        "key": "SCRUM-45",
+        "assignee": "ali",
+        "storyPoint": "8",
+        "fields": {
+          "summary": "Handle rate-limit errors gracefully in SettingsPanel",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-07-13T02:38:00",
+          "updated": "2025-07-13T02:38:00"
+        }
+      },
+      {
+        "id": "46",
+        "key": "SCRUM-46",
+        "assignee": "merve",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Handle authentication errors gracefully in Header",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-14T20:16:00",
+          "updated": "2025-07-14T20:16:00"
+        }
+      },
+      {
+        "id": "47",
+        "key": "SCRUM-47",
+        "assignee": "veli",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Design responsive session history for high latency",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-14T15:43:00",
+          "updated": "2025-07-14T15:43:00"
+        }
+      },
+      {
+        "id": "48",
+        "key": "SCRUM-48",
+        "assignee": "veli",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Improve accessibility in message input (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-11T14:12:00",
+          "updated": "2025-07-11T14:12:00"
+        }
+      },
+      {
+        "id": "49",
+        "key": "SCRUM-49",
+        "assignee": "veli",
+        "storyPoint": "13",
+        "fields": {
+          "summary": "Refactor Header for better responsiveness",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-10T01:41:00",
+          "updated": "2025-07-10T01:41:00"
+        }
+      },
+      {
+        "id": "50",
+        "key": "SCRUM-50",
+        "assignee": "merve",
+        "storyPoint": "1",
+        "fields": {
+          "summary": "Refactor SettingsPanel for better maintainability",
+          "status": {
+            "name": "To Do"
+          },
+          "created": "2025-07-13T16:59:00",
+          "updated": "2025-07-13T16:59:00"
+        }
+      },
+      {
+        "id": "51",
+        "key": "SCRUM-51",
+        "assignee": "ali",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Handle rate-limit errors gracefully in Header",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-12T01:00:00",
+          "updated": "2025-07-12T01:00:00"
+        }
+      },
+      {
+        "id": "52",
+        "key": "SCRUM-52",
+        "assignee": "veli",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Improve accessibility in theme switcher (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-14T06:42:00",
+          "updated": "2025-07-14T06:42:00"
+        }
+      },
+      {
+        "id": "53",
+        "key": "SCRUM-53",
+        "assignee": "merve",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Design responsive session history for high latency",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-07-12T00:40:00",
+          "updated": "2025-07-12T00:40:00"
+        }
+      },
+      {
+        "id": "54",
+        "key": "SCRUM-54",
+        "assignee": "merve",
+        "storyPoint": "1",
+        "fields": {
+          "summary": "Refactor SettingsPanel for better responsiveness",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-11T22:53:00",
+          "updated": "2025-07-11T22:53:00"
+        }
+      },
+      {
+        "id": "55",
+        "key": "SCRUM-55",
+        "assignee": "ali",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Add support for retry logic in ChatBox",
+          "status": {
+            "name": "To Do"
+          },
+          "created": "2025-07-14T06:34:00",
+          "updated": "2025-07-14T06:34:00"
+        }
+      },
+      {
+        "id": "56",
+        "key": "SCRUM-56",
+        "assignee": "ay\u015fe",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Design responsive chat bubble for power users",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-13T21:21:00",
+          "updated": "2025-07-13T21:21:00"
+        }
+      },
+      {
+        "id": "57",
+        "key": "SCRUM-57",
+        "assignee": "merve",
+        "storyPoint": "1",
+        "fields": {
+          "summary": "Design responsive chat list for power users",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-10T22:21:00",
+          "updated": "2025-07-10T22:21:00"
+        }
+      },
+      {
+        "id": "58",
+        "key": "SCRUM-58",
+        "assignee": "merve",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Improve accessibility in API response stream (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-11T03:33:00",
+          "updated": "2025-07-11T03:33:00"
+        }
+      },
+      {
+        "id": "59",
+        "key": "SCRUM-59",
+        "assignee": "ay\u015fe",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Add support for debounce behavior in Sidebar",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-13T02:18:00",
+          "updated": "2025-07-13T02:18:00"
+        }
+      },
+      {
+        "id": "60",
+        "key": "SCRUM-60",
+        "assignee": "veli",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Improve accessibility in role selector (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-14T12:04:00",
+          "updated": "2025-07-14T12:04:00"
+        }
+      }
+    ]
+  },
+  {
+    "sprint": "Sprint 4",
+    "startDate": "2025-07-15",
+    "endDate": "2025-07-21",
+    "TotalTarget": "168",
+    "RealTarget": "113",
+    "issues": [
+      {
+        "id": "61",
+        "key": "SCRUM-61",
+        "assignee": "veli",
+        "storyPoint": "8",
+        "fields": {
+          "summary": "Fix focus loss affecting MessageRenderer",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-12T17:34:00",
+          "updated": "2025-07-12T17:34:00"
+        }
+      },
+      {
+        "id": "62",
+        "key": "SCRUM-62",
+        "assignee": "ali",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Handle authentication errors gracefully in ChatBox",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-14T02:09:00",
+          "updated": "2025-07-14T02:09:00"
+        }
+      },
+      {
+        "id": "63",
+        "key": "SCRUM-63",
+        "assignee": "merve",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Design responsive chat list for edge cases",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-07-17T03:09:00",
+          "updated": "2025-07-17T03:09:00"
+        }
+      },
+      {
+        "id": "64",
+        "key": "SCRUM-64",
+        "assignee": "merve",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Implement unit tests for Header",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-07-20T22:14:00",
+          "updated": "2025-07-20T22:14:00"
+        }
+      },
+      {
+        "id": "65",
+        "key": "SCRUM-65",
+        "assignee": "ali",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Improve accessibility in session history (ARIA roles)",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-07-16T12:26:00",
+          "updated": "2025-07-16T12:26:00"
+        }
+      },
+      {
+        "id": "66",
+        "key": "SCRUM-66",
+        "assignee": "ay\u015fe",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Fix render delay affecting Header",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-07-17T00:45:00",
+          "updated": "2025-07-17T00:45:00"
+        }
+      },
+      {
+        "id": "67",
+        "key": "SCRUM-67",
+        "assignee": "merve",
+        "storyPoint": "8",
+        "fields": {
+          "summary": "Improve accessibility in loading spinner (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-18T02:45:00",
+          "updated": "2025-07-18T02:45:00"
+        }
+      },
+      {
+        "id": "68",
+        "key": "SCRUM-68",
+        "assignee": "merve",
+        "storyPoint": "3",
+        "fields": {
+          "summary": "Integrate message input with backend API for edge cases",
+          "status": {
+            "name": "To Do"
+          },
+          "created": "2025-07-21T14:15:00",
+          "updated": "2025-07-21T14:15:00"
+        }
+      },
+      {
+        "id": "69",
+        "key": "SCRUM-69",
+        "assignee": "ay\u015fe",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Improve accessibility in message input (ARIA roles)",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-19T18:02:00",
+          "updated": "2025-07-19T18:02:00"
+        }
+      },
+      {
+        "id": "70",
+        "key": "SCRUM-70",
+        "assignee": "ali",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Refactor SettingsPanel for better scalability",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-19T21:04:00",
+          "updated": "2025-07-19T21:04:00"
+        }
+      },
+      {
+        "id": "71",
+        "key": "SCRUM-71",
+        "assignee": "ay\u015fe",
+        "storyPoint": "2",
+        "fields": {
+          "summary": "Handle JSON parsing errors gracefully in ChatBox",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-17T12:55:00",
+          "updated": "2025-07-17T12:55:00"
+        }
+      },
+      {
+        "id": "72",
+        "key": "SCRUM-72",
+        "assignee": "ay\u015fe",
+        "storyPoint": "13",
+        "fields": {
+          "summary": "Design responsive theme switcher for high latency",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-16T20:53:00",
+          "updated": "2025-07-16T20:53:00"
+        }
+      },
+      {
+        "id": "73",
+        "key": "SCRUM-73",
+        "assignee": "ay\u015fe",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Refactor ChatBox for better readability",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-17T05:55:00",
+          "updated": "2025-07-17T05:55:00"
+        }
+      },
+      {
+        "id": "74",
+        "key": "SCRUM-74",
+        "assignee": "ay\u015fe",
+        "storyPoint": "1",
+        "fields": {
+          "summary": "Implement theme switcher component with retry logic",
+          "status": {
+            "name": "To Do"
+          },
+          "created": "2025-07-19T20:44:00",
+          "updated": "2025-07-19T20:44:00"
+        }
+      },
+      {
+        "id": "75",
+        "key": "SCRUM-75",
+        "assignee": "ay\u015fe",
+        "storyPoint": "1",
+        "fields": {
+          "summary": "Improve accessibility in chat bubble (ARIA roles)",
+          "status": {
+            "name": "In Progress"
+          },
+          "created": "2025-07-18T00:50:00",
+          "updated": "2025-07-18T00:50:00"
+        }
+      },
+      {
+        "id": "76",
+        "key": "SCRUM-76",
+        "assignee": "merve",
+        "storyPoint": "1",
+        "fields": {
+          "summary": "Implement chat bubble component with tab navigation",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-16T23:10:00",
+          "updated": "2025-07-16T23:10:00"
+        }
+      },
+      {
+        "id": "77",
+        "key": "SCRUM-77",
+        "assignee": "merve",
+        "storyPoint": "5",
+        "fields": {
+          "summary": "Implement unit tests for MessageRenderer",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-19T14:18:00",
+          "updated": "2025-07-19T14:18:00"
+        }
+      },
+      {
+        "id": "78",
+        "key": "SCRUM-78",
+        "assignee": "veli",
+        "storyPoint": "21",
+        "fields": {
+          "summary": "Design responsive role selector for edge cases",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-19T12:02:00",
+          "updated": "2025-07-19T12:02:00"
+        }
+      },
+      {
+        "id": "79",
+        "key": "SCRUM-79",
+        "assignee": "merve",
+        "storyPoint": "1",
+        "fields": {
+          "summary": "Handle network errors gracefully in Header",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-17T18:55:00",
+          "updated": "2025-07-17T18:55:00"
+        }
+      },
+      {
+        "id": "80",
+        "key": "SCRUM-80",
+        "assignee": "veli",
+        "storyPoint": "8",
+        "fields": {
+          "summary": "Fix missing scroll affecting ChatBox",
+          "status": {
+            "name": "Done"
+          },
+          "created": "2025-07-17T19:58:00",
+          "updated": "2025-07-17T19:58:00"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,499 @@
+[
+  {
+    "issue_key": "SCRUM-2",
+    "summary": "Add support for real-time feedback in Header",
+    "commit_message": "Add support for real-time feedback in Header",
+    "timestamp": "2025-06-26T16:46:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-3",
+    "summary": "Design responsive message input for power users",
+    "commit_message": "Design responsive message input for power users",
+    "timestamp": "2025-06-30T18:44:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-4",
+    "summary": "Integrate chat list with backend API for edge cases",
+    "commit_message": "Integrate chat list with backend API for edge cases",
+    "timestamp": "2025-06-27T14:49:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-5",
+    "summary": "Design responsive message input for power users",
+    "commit_message": "Design responsive message input for power users",
+    "timestamp": "2025-06-27T09:13:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-6",
+    "summary": "Implement unit tests for ChatBox",
+    "commit_message": "Implement unit tests for ChatBox",
+    "timestamp": "2025-06-27T09:05:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-7",
+    "summary": "Refactor MessageRenderer for better readability",
+    "commit_message": "Refactor MessageRenderer for better readability",
+    "timestamp": "2025-06-25T20:43:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-9",
+    "summary": "Fix overflow issue affecting MessageRenderer",
+    "commit_message": "Fix overflow issue affecting MessageRenderer",
+    "timestamp": "2025-06-26T18:21:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-10",
+    "summary": "Integrate role selector with backend API for power users",
+    "commit_message": "Integrate role selector with backend API for power users",
+    "timestamp": "2025-06-24T15:46:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-11",
+    "summary": "Improve accessibility in role selector (ARIA roles)",
+    "commit_message": "Improve accessibility in role selector (ARIA roles)",
+    "timestamp": "2025-06-26T15:29:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-12",
+    "summary": "Refactor SettingsPanel for better readability",
+    "commit_message": "Refactor SettingsPanel for better readability",
+    "timestamp": "2025-06-25T03:57:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-13",
+    "summary": "Implement message input component with debounce behavior",
+    "commit_message": "Implement message input component with debounce behavior",
+    "timestamp": "2025-06-27T09:29:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-14",
+    "summary": "Fix overflow issue affecting ChatBox",
+    "commit_message": "Fix overflow issue affecting ChatBox",
+    "timestamp": "2025-06-30T22:26:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-15",
+    "summary": "Handle timeout errors gracefully in SettingsPanel",
+    "commit_message": "Handle timeout errors gracefully in SettingsPanel",
+    "timestamp": "2025-06-28T03:09:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-16",
+    "summary": "Optimize Sidebar performance during multiple sessions",
+    "commit_message": "Optimize Sidebar performance during multiple sessions",
+    "timestamp": "2025-06-29T03:48:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-19",
+    "summary": "Handle timeout errors gracefully in SettingsPanel",
+    "commit_message": "Handle timeout errors gracefully in SettingsPanel",
+    "timestamp": "2025-06-29T18:44:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-20",
+    "summary": "Optimize MessageRenderer performance during multiple sessions",
+    "commit_message": "Optimize MessageRenderer performance during multiple sessions",
+    "timestamp": "2025-06-25T14:06:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-21",
+    "summary": "Implement unit tests for MessageRenderer",
+    "commit_message": "Implement unit tests for MessageRenderer",
+    "timestamp": "2025-07-06T15:52:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-22",
+    "summary": "Improve accessibility in theme switcher (ARIA roles)",
+    "commit_message": "Improve accessibility in theme switcher (ARIA roles)",
+    "timestamp": "2025-07-06T18:37:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-23",
+    "summary": "Fix flicker bug affecting SettingsPanel",
+    "commit_message": "Fix flicker bug affecting SettingsPanel",
+    "timestamp": "2025-07-04T15:01:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-24",
+    "summary": "Fix overflow issue affecting Sidebar",
+    "commit_message": "Fix overflow issue affecting Sidebar",
+    "timestamp": "2025-07-03T02:43:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-25",
+    "summary": "Optimize MessageRenderer performance during multiple sessions",
+    "commit_message": "Optimize MessageRenderer performance during multiple sessions",
+    "timestamp": "2025-07-06T03:43:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-26",
+    "summary": "Implement unit tests for MessageRenderer",
+    "commit_message": "Implement unit tests for MessageRenderer",
+    "timestamp": "2025-07-06T03:25:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-27",
+    "summary": "Optimize SettingsPanel performance during power users",
+    "commit_message": "Optimize SettingsPanel performance during power users",
+    "timestamp": "2025-07-05T04:47:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-28",
+    "summary": "Integrate chat list with backend API for mobile users",
+    "commit_message": "Integrate chat list with backend API for mobile users",
+    "timestamp": "2025-07-06T06:02:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-29",
+    "summary": "Refactor MessageRenderer for better responsiveness",
+    "commit_message": "Refactor MessageRenderer for better responsiveness",
+    "timestamp": "2025-07-05T16:31:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-30",
+    "summary": "Implement chat bubble component with mobile view",
+    "commit_message": "Implement chat bubble component with mobile view",
+    "timestamp": "2025-07-02T03:44:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-31",
+    "summary": "Improve accessibility in theme switcher (ARIA roles)",
+    "commit_message": "Improve accessibility in theme switcher (ARIA roles)",
+    "timestamp": "2025-07-03T20:31:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-32",
+    "summary": "Refactor Header for better responsiveness",
+    "commit_message": "Refactor Header for better responsiveness",
+    "timestamp": "2025-07-01T16:00:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-34",
+    "summary": "Improve accessibility in message input (ARIA roles)",
+    "commit_message": "Improve accessibility in message input (ARIA roles)",
+    "timestamp": "2025-07-06T03:42:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-35",
+    "summary": "Improve accessibility in chat list (ARIA roles)",
+    "commit_message": "Improve accessibility in chat list (ARIA roles)",
+    "timestamp": "2025-07-07T11:57:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-36",
+    "summary": "Handle timeout errors gracefully in ChatBox",
+    "commit_message": "Handle timeout errors gracefully in ChatBox",
+    "timestamp": "2025-07-06T15:53:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-37",
+    "summary": "Add support for mobile view in SettingsPanel",
+    "commit_message": "Add support for mobile view in SettingsPanel",
+    "timestamp": "2025-07-04T07:32:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-38",
+    "summary": "Fix flicker bug affecting ChatBox",
+    "commit_message": "Fix flicker bug affecting ChatBox",
+    "timestamp": "2025-07-07T16:36:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-39",
+    "summary": "Add support for real-time feedback in Sidebar",
+    "commit_message": "Add support for real-time feedback in Sidebar",
+    "timestamp": "2025-07-07T23:48:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-40",
+    "summary": "Design responsive user avatar for mobile users",
+    "commit_message": "Design responsive user avatar for mobile users",
+    "timestamp": "2025-07-03T23:57:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-41",
+    "summary": "Implement unit tests for Header",
+    "commit_message": "Implement unit tests for Header",
+    "timestamp": "2025-07-15T01:59:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-42",
+    "summary": "Integrate theme switcher with backend API for mobile users",
+    "commit_message": "Integrate theme switcher with backend API for mobile users",
+    "timestamp": "2025-07-14T10:51:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-43",
+    "summary": "Improve accessibility in chat list (ARIA roles)",
+    "commit_message": "Improve accessibility in chat list (ARIA roles)",
+    "timestamp": "2025-07-11T14:38:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-44",
+    "summary": "Design responsive loading spinner for power users",
+    "commit_message": "Design responsive loading spinner for power users",
+    "timestamp": "2025-07-13T23:16:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-45",
+    "summary": "Handle rate-limit errors gracefully in SettingsPanel",
+    "commit_message": "Handle rate-limit errors gracefully in SettingsPanel",
+    "timestamp": "2025-07-13T02:38:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-46",
+    "summary": "Handle authentication errors gracefully in Header",
+    "commit_message": "Handle authentication errors gracefully in Header",
+    "timestamp": "2025-07-14T20:16:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-47",
+    "summary": "Design responsive session history for high latency",
+    "commit_message": "Design responsive session history for high latency",
+    "timestamp": "2025-07-14T15:43:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-48",
+    "summary": "Improve accessibility in message input (ARIA roles)",
+    "commit_message": "Improve accessibility in message input (ARIA roles)",
+    "timestamp": "2025-07-11T14:12:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-49",
+    "summary": "Refactor Header for better responsiveness",
+    "commit_message": "Refactor Header for better responsiveness",
+    "timestamp": "2025-07-10T01:41:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-51",
+    "summary": "Handle rate-limit errors gracefully in Header",
+    "commit_message": "Handle rate-limit errors gracefully in Header",
+    "timestamp": "2025-07-12T01:00:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-52",
+    "summary": "Improve accessibility in theme switcher (ARIA roles)",
+    "commit_message": "Improve accessibility in theme switcher (ARIA roles)",
+    "timestamp": "2025-07-14T06:42:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-53",
+    "summary": "Design responsive session history for high latency",
+    "commit_message": "Design responsive session history for high latency",
+    "timestamp": "2025-07-12T00:40:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-54",
+    "summary": "Refactor SettingsPanel for better responsiveness",
+    "commit_message": "Refactor SettingsPanel for better responsiveness",
+    "timestamp": "2025-07-11T22:53:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-56",
+    "summary": "Design responsive chat bubble for power users",
+    "commit_message": "Design responsive chat bubble for power users",
+    "timestamp": "2025-07-13T21:21:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-57",
+    "summary": "Design responsive chat list for power users",
+    "commit_message": "Design responsive chat list for power users",
+    "timestamp": "2025-07-10T22:21:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-58",
+    "summary": "Improve accessibility in API response stream (ARIA roles)",
+    "commit_message": "Improve accessibility in API response stream (ARIA roles)",
+    "timestamp": "2025-07-11T03:33:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-59",
+    "summary": "Add support for debounce behavior in Sidebar",
+    "commit_message": "Add support for debounce behavior in Sidebar",
+    "timestamp": "2025-07-13T02:18:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-60",
+    "summary": "Improve accessibility in role selector (ARIA roles)",
+    "commit_message": "Improve accessibility in role selector (ARIA roles)",
+    "timestamp": "2025-07-14T12:04:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-61",
+    "summary": "Fix focus loss affecting MessageRenderer",
+    "commit_message": "Fix focus loss affecting MessageRenderer",
+    "timestamp": "2025-07-12T17:34:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-62",
+    "summary": "Handle authentication errors gracefully in ChatBox",
+    "commit_message": "Handle authentication errors gracefully in ChatBox",
+    "timestamp": "2025-07-14T02:09:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-63",
+    "summary": "Design responsive chat list for edge cases",
+    "commit_message": "Design responsive chat list for edge cases",
+    "timestamp": "2025-07-17T03:09:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-64",
+    "summary": "Implement unit tests for Header",
+    "commit_message": "Implement unit tests for Header",
+    "timestamp": "2025-07-20T22:14:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-65",
+    "summary": "Improve accessibility in session history (ARIA roles)",
+    "commit_message": "Improve accessibility in session history (ARIA roles)",
+    "timestamp": "2025-07-16T12:26:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-66",
+    "summary": "Fix render delay affecting Header",
+    "commit_message": "Fix render delay affecting Header",
+    "timestamp": "2025-07-17T00:45:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-67",
+    "summary": "Improve accessibility in loading spinner (ARIA roles)",
+    "commit_message": "Improve accessibility in loading spinner (ARIA roles)",
+    "timestamp": "2025-07-18T02:45:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-69",
+    "summary": "Improve accessibility in message input (ARIA roles)",
+    "commit_message": "Improve accessibility in message input (ARIA roles)",
+    "timestamp": "2025-07-19T18:02:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-70",
+    "summary": "Refactor SettingsPanel for better scalability",
+    "commit_message": "Refactor SettingsPanel for better scalability",
+    "timestamp": "2025-07-19T21:04:00",
+    "author": "ali"
+  },
+  {
+    "issue_key": "SCRUM-71",
+    "summary": "Handle JSON parsing errors gracefully in ChatBox",
+    "commit_message": "Handle JSON parsing errors gracefully in ChatBox",
+    "timestamp": "2025-07-17T12:55:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-72",
+    "summary": "Design responsive theme switcher for high latency",
+    "commit_message": "Design responsive theme switcher for high latency",
+    "timestamp": "2025-07-16T20:53:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-73",
+    "summary": "Refactor ChatBox for better readability",
+    "commit_message": "Refactor ChatBox for better readability",
+    "timestamp": "2025-07-17T05:55:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-75",
+    "summary": "Improve accessibility in chat bubble (ARIA roles)",
+    "commit_message": "Improve accessibility in chat bubble (ARIA roles)",
+    "timestamp": "2025-07-18T00:50:00",
+    "author": "ay\u015fe"
+  },
+  {
+    "issue_key": "SCRUM-76",
+    "summary": "Implement chat bubble component with tab navigation",
+    "commit_message": "Implement chat bubble component with tab navigation",
+    "timestamp": "2025-07-16T23:10:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-77",
+    "summary": "Implement unit tests for MessageRenderer",
+    "commit_message": "Implement unit tests for MessageRenderer",
+    "timestamp": "2025-07-19T14:18:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-78",
+    "summary": "Design responsive role selector for edge cases",
+    "commit_message": "Design responsive role selector for edge cases",
+    "timestamp": "2025-07-19T12:02:00",
+    "author": "veli"
+  },
+  {
+    "issue_key": "SCRUM-79",
+    "summary": "Handle network errors gracefully in Header",
+    "commit_message": "Handle network errors gracefully in Header",
+    "timestamp": "2025-07-17T18:55:00",
+    "author": "merve"
+  },
+  {
+    "issue_key": "SCRUM-80",
+    "summary": "Fix missing scroll affecting ChatBox",
+    "commit_message": "Fix missing scroll affecting ChatBox",
+    "timestamp": "2025-07-17T19:58:00",
+    "author": "veli"
+  }
+]
